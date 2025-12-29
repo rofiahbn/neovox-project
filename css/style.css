@@ -1,0 +1,40 @@
+body{
+    background-color:#e5e5e5;
+   text-align:center;
+    padding-top:12vw;
+}
+#header{
+    position:fixed;
+    width:80%;
+    height:7vw;
+    background-color:white;
+    left:10%;
+    top:3vw;
+    box-shadow: 4px 4px 0.5px 2px lightgray;
+}
+#logo{
+     position:fixed;
+    width:5%;
+    height:5vw;
+    background-image: url("https://kf.goarglobal.com/img/logo.png");
+   background-size:contain;
+    left:12%;
+    top:4vw;
+    background-repeat:no-repeat;
+}
+#title_r{
+    position:fixed;
+    left:18%;
+    top:4.2vw; 
+    font-size:2.5vw;
+    color:darkgreen;
+    font-family: arial; 
+}
+#slogan{
+    position:fixed;
+    left:18%;
+    top:7vw; 
+    font-size:1.5vw;
+    color:limegreen;
+    font-family: arial; 
+}
