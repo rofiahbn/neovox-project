@@ -1,0 +1,13 @@
+#Header set Access-Control-Allow-Origin "https://play.google.com"
+ 
+#http to https
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+ 
+ 
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  !(\.data|\.wasm|\.png|\.jpg|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.webp|\.ico|\.mp4|\.json|\.unityweb|\.html|\.patt|\.dat)$
+RewriteRule (.*) routes.php [QSA,L]
